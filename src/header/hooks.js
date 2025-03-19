@@ -20,7 +20,7 @@ export const useContentMenuItems = courseId => {
     },
     {
       href: getPagePath(courseId, 'true', 'tabs'),
-      title: intl.formatMessage(messages['header.links.pages']),
+      title: intl.formatMessage(messages['header.links.pages']).replace('/authoring', ''),
     },
     {
       href: `${studioBaseUrl}/assets/${courseId}`,
