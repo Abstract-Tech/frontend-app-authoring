@@ -19,8 +19,8 @@ export const useContentMenuItems = courseId => {
       title: intl.formatMessage(messages['header.links.updates']),
     },
     {
-      href: getPagePath(courseId, 'true', 'tabs'),
-      title: intl.formatMessage(messages['header.links.pages']).replace('/authoring', ''),
+      href: getPagePath(courseId, 'true', 'tabs').replace('/authoring', ''),
+      title: intl.formatMessage(messages['header.links.pages']),
     },
     {
       href: `${studioBaseUrl}/assets/${courseId}`,
